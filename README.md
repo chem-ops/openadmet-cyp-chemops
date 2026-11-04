@@ -33,6 +33,8 @@ Step 2: Same algorithm for different datasets.
 
 In Step 1, Uni-Mol achieved the best overall performance. A plausible explanation is that Uni-Mol explicitly incorporates 3D conformational information and can therefore better capture the protein–ligand binding features. Meanwhile, the CYP2D6 model performed markedly worse than the others, and we further examined the underlying causes. As shown in Figure 3, the CYP2D6 assay correlates poorly with the other three assays, whereas the remaining three assays correlate well with one another. In addition, the binding pocket of CYP2D6 contains several anionic residues, and its binding characteristics therefore differ from those of the other isoforms. Furthermore, a different experimental method was used for CYP2D6 than for the other three isoforms.
 ![results](./CYP.cross.correlation.png) 
+*Figure 3. Assay correlations
+
 
 **Key Findings from Step 2**
 
