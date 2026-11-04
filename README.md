@@ -48,7 +48,10 @@ In Step 1, Uni-Mol achieved the best overall performance. A plausible explanatio
  
 - **Finding 4: Using the PubChem data as a background set (Dataset 4) slightly improved performance for CYP1A2, CYP2C9, and CYP3A4 relative to Dataset 1, although the gains were not significant; CYP2D6, in contrast, performed worse.** Incorporating the PubChem data as background samples yielded only modest gains for these three isoforms, whereas the CYP2D6 model showed degraded performance.
 
-- **Finding 5: Incorporating the ChEMBL data did not contribute to predictive performance.** 
+- **Finding 5: Incorporating the ChEMBL data did not contribute to predictive performance.**
+
+
+After considerable deliberation over which CYP2D6 result to submit, we finally made our decision. As shown in Table 2, Dataset 3 (the fill-in method) achieved an MAE of 0.64, the best compared with both the leaderboard (broadcast baseline) result and our other results; however, its ST_RAE was less satisfactory. Dataset 5 (the method incorporating merged PubChem data) yielded a better RAE of 0.45, outperforming the fill-in method. For the midterm submission, we submitted the results of Dataset 5, which ranked second overall on the full dataset. For the final submission, however, we chose to prioritize MAE and therefore performed an ensemble of the above two results.
 
 
 ## Conclusion
